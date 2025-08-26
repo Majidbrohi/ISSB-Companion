@@ -1,0 +1,22 @@
+[project]
+name = "smart-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Anziq Majid", email = "144418275+Majidbrohi@users.noreply.github.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.116.1",
+    "httpie>=3.2.4",
+    "openai-agents>=0.2.4",
+    "uvicorn>=0.35.0",
+]
+
+[project.scripts]
+smart-agent = "smart_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.8.0,<0.9"]
+build-backend = "uv_build"
